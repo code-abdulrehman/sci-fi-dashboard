@@ -1,0 +1,142 @@
+import type { Weapon } from './types';
+
+export const weaponsData: Weapon[] = [
+  {
+    id: "wp_gu1",
+    name: "GU-1 Tactical Rifle",
+    price: 2800,
+    range: "Long Range",
+    usage: "Combat Operations",
+    description: "Advanced tactical rifle with precision optics and modular design. Features enhanced accuracy and reliability for critical missions.",
+    image: "/src/assets/wp/wp_gu1.png",
+    totalStock: 15,
+    category: "rifle",
+    caliber: "7.62x51mm NATO",
+    weight: "4.2 kg",
+    length: "890 mm",
+    fireRate: "650 RPM",
+    magazine: "20 rounds",
+    status: "available"
+  },
+  {
+    id: "wp_gu2",
+    name: "GU-2 Combat Pistol",
+    price: 1200,
+    range: "Close Range",
+    usage: "Personal Defense",
+    description: "High-performance combat pistol with ergonomic grip and advanced safety systems. Ideal for close-quarters engagements.",
+    image: "/src/assets/wp/wp_gu2.png",
+    totalStock: 8,
+    category: "pistol",
+    caliber: "9x19mm Parabellum",
+    weight: "0.95 kg",
+    length: "210 mm",
+    fireRate: "Semi-auto",
+    magazine: "15 rounds",
+    status: "low_stock"
+  },
+  {
+    id: "wp_gu3",
+    name: "GU-3 Precision Sniper",
+    price: 4500,
+    range: "Extreme Range",
+    usage: "Sniper Operations",
+    description: "Ultra-precision sniper rifle with advanced ballistic computer and thermal imaging. Designed for maximum accuracy at extreme distances.",
+    image: "/src/assets/wp/wp_gu3.png",
+    totalStock: 3,
+    category: "sniper",
+    caliber: ".338 Lapua Magnum",
+    weight: "6.8 kg",
+    length: "1200 mm",
+    fireRate: "Bolt Action",
+    magazine: "5 rounds",
+    status: "available"
+  },
+  {
+    id: "wp_gu4",
+    name: "GU-4 Axe",
+    price: 1800,
+    range: "Short Range",
+    usage: "Breaching & Close Combat",
+    description: "Axe with a sharp edge and a handle. Perfect for breaching operations and close-quarters combat.",
+    image: "/src/assets/wp/wp_gu4.png",
+    totalStock: 12,
+    category: "special",
+    caliber: "13 mm",
+    weight: "1.2 kg",
+    length: "100 cm",
+    fireRate: "Pump Action",
+    magazine: "1 rounds",
+    status: "available"
+  },
+  {
+    id: "wp_gu8",
+    name: "GU-8 Tactical Carbine",
+    price: 2400,
+    range: "Medium Range",
+    usage: "Tactical Operations",
+    description: "Versatile tactical carbine with modular design and multiple accessory mounting points. Suitable for various mission profiles.",
+    image: "/src/assets/wp/wp_gu8.png",
+    totalStock: 18,
+    category: "rifle",
+    caliber: "5.56x45mm NATO",
+    weight: "3.1 kg",
+    length: "780 mm",
+    fireRate: "700 RPM",
+    magazine: "30 rounds",
+    status: "available"
+  },
+  {
+    id: "wp_gu9",
+    name: "GU-9 Combat Revolver",
+    price: 950,
+    range: "Close Range",
+    usage: "Backup Weapon",
+    description: "Reliable combat revolver with high stopping power and simple operation. Excellent backup weapon for critical situations.",
+    image: "/src/assets/wp/wp_gu9.png",
+    totalStock: 25,
+    category: "pistol",
+    caliber: ".357 Magnum",
+    weight: "1.2 kg",
+    length: "240 mm",
+    fireRate: "Double Action",
+    magazine: "6 rounds",
+    status: "available"
+  },
+  {
+    id: "wp_gu10",
+    name: "GU-10 Anti-Material Rifle",
+    price: 6800,
+    range: "Extreme Range",
+    usage: "Anti-Material Operations",
+    description: "Heavy anti-material rifle capable of engaging armored targets and fortified positions. Maximum penetration and stopping power.",
+    image: "/src/assets/wp/wp_gu10.png",
+    totalStock: 2,
+    category: "special",
+    caliber: ".50 BMG",
+    weight: "12.5 kg",
+    length: "1400 mm",
+    fireRate: "Bolt Action",
+    magazine: "5 rounds",
+    status: "low_stock"
+  }
+];
+
+export const categories = [
+  { value: "all", label: "All Categories" },
+  { value: "rifle", label: "Rifles" },
+  { value: "pistol", label: "Pistols" },
+  { value: "sniper", label: "Sniper Rifles" },
+  { value: "shotgun", label: "Shotguns" },
+  { value: "smg", label: "Submachine Guns" },
+  { value: "lmg", label: "Light Machine Guns" },
+  { value: "special", label: "Special Weapons" }
+];
+
+export const statusOptions = [
+  { value: "all", label: "All Status" },
+  { value: "available", label: "Available" },
+  { value: "low_stock", label: "Low Stock" },
+  { value: "out_of_stock", label: "Out of Stock" },
+  { value: "maintenance", label: "Maintenance" }
+]; 
