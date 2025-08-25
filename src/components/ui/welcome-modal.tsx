@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Button } from './button';
 import { Frame } from './frame';
 import { twMerge } from 'tailwind-merge';
+import { Goal, LockKeyhole, TabletSmartphone, PencilRuler } from "lucide-react"
 
 interface WelcomeModalProps {
   isOpen: boolean;
@@ -66,7 +67,9 @@ export function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
           {/* Content */}
           <div className="space-y-4 mb-6">
             <div className="bg-background/30 border border-primary/20 rounded p-4">
-              <h3 className="text-sm font-bold text-primary mb-2">🎯 Purpose</h3>
+              <h3 className="text-sm font-bold text-primary mb-2">
+                <Goal className="inline-block w-5 h-5 mr-2" /> Purpose
+              </h3>
               <p className="text-xs opacity-80 leading-relaxed">
                 This dashboard is created exclusively for UI/UX practice and development purposes. 
                 It serves as a demonstration of modern web technologies and design patterns.
@@ -74,7 +77,9 @@ export function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
             </div>
 
             <div className="bg-background/30 border border-primary/20 rounded p-4">
-              <h3 className="text-sm font-bold text-primary mb-2">🔒 Safety Notice</h3>
+              <h3 className="text-sm font-bold text-primary mb-2">
+                <LockKeyhole className="inline-block w-5 h-5 mr-2" /> Safety Notice
+              </h3>
               <p className="text-xs opacity-80 leading-relaxed">
                 This is a non-functional demonstration site. No real data is processed, 
                 no harmful content is present, and no assessments are conducted. 
@@ -83,7 +88,9 @@ export function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
             </div>
 
             <div className="bg-background/30 border border-primary/20 rounded p-4">
-              <h3 className="text-sm font-bold text-primary mb-2">🛠️ Technologies</h3>
+              <h3 className="text-sm font-bold text-primary mb-2">
+                <PencilRuler className="inline-block w-5 h-5 mr-2" /> Technologies
+              </h3>
               <p className="text-xs opacity-80 leading-relaxed">
                 Built with React, TypeScript, Tailwind CSS, and modern web standards. 
                 Features include error boundaries, lazy loading, and responsive design.
@@ -91,7 +98,9 @@ export function WelcomeModal({ isOpen, onClose }: WelcomeModalProps) {
             </div>
 
             <div className="bg-background/30 border border-primary/20 rounded p-4">
-              <h3 className="text-sm font-bold text-primary mb-2">📱 Features</h3>
+              <h3 className="text-sm font-bold text-primary mb-2">
+                <TabletSmartphone className="inline-block w-5 h-5 mr-2" /> Features
+              </h3>
               <ul className="text-xs opacity-80 space-y-1">
                 <li>• Real-time simulated data visualization</li>
                 <li>• Responsive design across all devices</li>
