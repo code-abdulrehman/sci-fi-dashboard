@@ -1,7 +1,7 @@
 import { twMerge } from "tailwind-merge";
 import { Frame } from "@/components/ui/frame";
 import { useState, useEffect } from "react";
-import { Wind, Droplet, Clock, CloudSun, Compass, Thermometer } from "lucide-react"
+import { Wind, Droplet, CloudSun, Compass, Thermometer } from "lucide-react"
 
 // Weather conditions for variety
 const weatherConditions = [

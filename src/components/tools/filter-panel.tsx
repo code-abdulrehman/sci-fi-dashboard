@@ -4,7 +4,7 @@ import { Frame } from "@/components/ui/frame";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, Filter, X, Target, DollarSign, Package } from "lucide-react";
-import { Combobox, createListCollection } from "@ark-ui/react/combobox";
+import { createListCollection } from "@ark-ui/react/combobox";
 import {
   ComboboxRoot,
   ComboboxControl,

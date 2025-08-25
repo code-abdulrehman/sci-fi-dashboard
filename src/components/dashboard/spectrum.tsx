@@ -21,7 +21,7 @@ const Spectrum = ({
 }: SpectrumProps) => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const [spectrumData, setSpectrumData] = useState<SpectrumData[]>([]);
-    const [isActive, setIsActive] = useState(true);
+    const [isActive] = useState(true);
 
     // Utility functions
     const rnd = (a: number, b: number) => a + Math.random() * (b - a);

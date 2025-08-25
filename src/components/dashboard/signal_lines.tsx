@@ -22,7 +22,7 @@ const SignalLines = ({
     height = 200 
 }: SignalLinesProps) => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
-    const [signals, setSignals] = useState<SignalData[]>([
+    const [signals] = useState<SignalData[]>([
         {
             id: '1',
             frequency: 2.4,
@@ -192,7 +192,6 @@ const SignalLines = ({
 
             const color = getSignalColor(signal.type);
             const freqX = (signal.frequency / 6) * width;
-            const strengthY = height - ((signal.strength / 100) * height);
 
             // Add some noise to the signal
             const noise = Math.sin(time * 2 + index) * 3;

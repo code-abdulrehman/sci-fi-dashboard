@@ -4,7 +4,7 @@ import { Frame } from "@/components/ui/frame";
 import { Combobox } from "@ark-ui/react/combobox";
 import { Portal } from "@ark-ui/react/portal";
 import { ChevronsUpDown, Search, Check } from "lucide-react";
-import { createContext, useContext } from "react";
+import { createContext } from "react";
 
 const ValueContext = createContext<string[] | undefined>(undefined);
 
@@ -39,8 +39,6 @@ function ComboboxTrigger({
   className,
   ...rest
 }: React.ComponentProps<typeof Combobox.Trigger>) {
-  const value = useContext(ValueContext);
-
   return (
     <Combobox.Trigger asChild {...rest}>
       <Button className="w-full min-w-55 px-0 [&>span]:justify-start px-8">

@@ -15,5 +15,3 @@ export {
   BadRequestPage, 
   InternalServerErrorPage 
 } from './error-pages';
-export { LoadingTest } from './loading-test';
-export { RouteTest } from './route-test';
